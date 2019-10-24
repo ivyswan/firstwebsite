@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Audio</title>
+<link rel="stylesheet" type="text/css" href="desktop.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="pc.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:321px) and (max-width:768px)" href="tablet.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:320px)" href="phone.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Prata|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'> 
+<style>
+#mainAudio{
+	width:800px;
+	height:auto;
+}
+
+.greyBox{
+	height:auto;
+}
+
+.albumWrapper{
+	width:210px;
+	height:auto;	
+	margin:auto;
+/*	border:1px solid #000;*/
+}
+
+.albumImage{
+	background-color:#FFF;
+	text-align:center;
+	border:10px solid #FFF;
+	position:absolute;
+	top:0;
+	left:-100px;
+	width:200px;
+	height:200px;
+	margin:0;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+img.albumImage:hover{
+	border:70px solid #000;
+	border-radius:50%;
+	width:100px;
+	height:100px;
+}
+
+.albumSongs{
+	position:relative;
+	width:360px;
+	min-height:240px;
+	padding:0 0 0 100px;
+	color:#EEE;
+	/*border:1px solid #000;*/
+}
+
+.albumSongs li{
+	font-size:0.9em;
+	display:inline;
+}
+
+audio{
+	 width:400px;
+	 margin-bottom:25px;	
+}
+
+.audioWrap{
+	width:400px;
+	height:auto;
+	margin:20px auto 40px;
+	padding:130px 30px 0 130px;
+	background-color:rgba(255,102,204,0.25);
+	/*border:1px solid black;*/
+}
+
+.audioWrap p{
+	margin:0;	
+}
+
+.album{
+	font-style:italic;	
+}
+
+.social{
+	float:right;
+}
+
+.social a{
+	border:none;	
+}
+
+.social img{
+	width:60px;
+	height:60px;
+	border:none;
+	border-radius:50%;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.social img:hover{
+	background-color:rgba(255,102,204,0.3);
+	margin-bottom:-5px;
+}
+</style>
+</head>
+<body>
+<div class="mainContainer" id="mainAudio">
+    <div class="nav">
+        <a href="music.html#audio30STM">&larr; Back to Thirty Seconds to Mars</a>
+    </div>
+
+	<div class="headerBox" id="headerMusic">    
+         <h1><span class="smallerH1">All about</span> Music.</h1>
+	</div>
+
+    <div class="greyBox">
+        <div class="social">
+            <a href="https://www.facebook.com/thirtysecondstomars?fref=ts" target="_blank"><img src="images/png/facebook.png"></a>
+            <a href="https://twitter.com/30SECONDSTOMARS" target="_blank"><img src="images/png/twitter.png"></a>
+            <a href="http://www.youtube.com/user/30SecondsToMarsVEVO" target="_blank"><img src="images/png/youtube.png"></a>
+        </div>
+            <div class="albumSongs">
+                <ul>
+                <li>Birth</li> &bull;
+                <li>Conquistador</li> &bull;
+                <li>Up in the Air</li> &bull;
+                <li>City of Angels</li> &bull;
+                <li>The Race</li> &bull;
+                <li>End of All Days</li> &bull;
+                <li>Pyres of Varanasi</li> &bull;
+                <li>Bright Lights</li> &bull;
+                <li>Do or Die</li> &bull;
+                <li>Convergence</li> &bull;
+                <li>Northern Lights</li> &bull;
+                <li>Depuis Le Debut</li>
+                </ul>
+            <img src="images/llfd.jpg" class="albumImage">  
+            </div>      
+        <div class="audioWrap">        
+            <p>Closer to the Edge - <span class="album">This is War</span></p><audio src="audio/30stm_closertotheedge.mp3" controls></audio>
+        </div>
+    </div> 
+</div>
+
+<div class="navContainer">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="fitness.html">Fitness</a></li>
+      <li><a href="codes.html">Codes</a></li>
+      <li><a href="about.html#contact">Contact</a></li>
+      </ul>
+    <div class="menu">
+        <p>Menu</p>
+    </div>
+</div>
+</body>
+</html>

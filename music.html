@@ -1,0 +1,927 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Music</title>
+<link rel="stylesheet" type="text/css" href="desktop.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="pc.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:321px) and (max-width:768px)" href="tablet.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:320px)" href="phone.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width:320px) and (max-device-width:480px)" href="phone.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Prata|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>  
+<style>
+#mainMusic{
+	height:10300px;
+}
+.greyBox{
+	height:10000px;
+}
+/*-----*/
+#thirtysecondstomars{
+	height:2800px;
+}
+#biffyclyro{
+	height:3300px;
+}
+#smashingpumpkins{
+	height:3800px;
+}
+/*-----*/
+#mars{
+	height:2500px;
+}
+#clyro{
+	height:3000px;
+}
+#pumpkins{
+	height:3500px;
+}
+/*-----*/
+.band{
+	width:400px;
+	height:auto;
+	margin:20px -50px 0 0;
+	float:right;
+	/*border:1px solid #000;*/
+}
+
+.bandWrapper{
+	width:400px;
+	height:220px;	
+	/*border:1px solid #000;*/
+}
+
+.bandMembers{
+	background-repeat:no-repeat;
+	color:#FFF;
+	width:120px;
+	height:120px;
+	border-radius:50%;
+	text-align:center;
+	font-size:1.2em;
+	padding:80px 40px 0;
+}
+
+.bandMembers p, .newBandMembers p{
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(34,34,34,0.65) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(34,34,34,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.newBandMembers{
+	width:100px;
+	height:110px;
+	border-radius:50%;
+	color:#FFF;
+	background-color:rgba(255,102,204,0.5);
+	text-align:center;
+	font-size:1.2em;
+	padding:50px 30px 0;		
+	margin:-70px 0 0 100px;
+	/*margin:-60px 0 0 -40px;*/
+}
+
+.newMember{
+	font-style:italic;
+	font-size:0.7em;
+	color:#FFF;	
+}
+/*-----*/
+#jaredleto{
+	background-image:url(images/jaredleto.jpg);
+}
+#shannonleto{
+	background-image:url(images/shannonleto.jpg);
+}
+#tomomilicevic{
+	background-image:url(images/tomomilicevic.jpg);
+}
+#simonneil{
+	background-image:url(images/simonneil.jpg);
+}
+#jamesjohnston{
+	background-image:url(images/jamesjohnston.jpg);
+}
+#benjohnston{
+	background-image:url(images/benjohnston.jpg);
+}
+#billycorgan{
+	background-image:url(images/billycorgan.jpg);
+}
+#jamesiha{
+	background-image:url(images/jamesiha.jpg);
+}
+#jeffschroeder{
+	background-image:url(images/jeffschroeder.jpg);
+}
+#darcywretzky{
+	background-image:url(images/darcywretzky.jpg);
+}
+#nicolefiorentino{
+	background-image:url(images/nicolefiorentino.jpg);
+}
+#jimmychamberlin{
+	background-image:url(images/jimmychamberlin.jpg);
+}
+#mikebyrne{
+	background-image:url(images/mikebyrne.jpg);
+}
+/*-----*/
+.inst{
+	width:140px;
+	height:20px;
+	position:relative;
+	top:-150px;
+	left:150px;
+	margin:0;	
+	padding:5px 10px 5px 60px;
+	z-index:-1;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(34,34,34,0.65) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(34,34,34,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(34,34,34,0.65) 50%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+#inst2{
+	top:-145px;
+	left:170px;
+}
+
+#inst3{
+	top:-140px;
+	left:190px;
+}
+
+.albumWrapper{
+	width:210px;
+	height:auto;	
+	margin:0 0 0 -40px;
+/*	border:1px solid #000;*/
+}
+
+.albumImage{
+	background-color:#FFF;
+	text-align:center;
+	border:10px solid #FFF;
+	position:absolute;
+	top:0;
+	left:-200px;
+	width:200px;
+	height:200px;
+	margin:0;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+img.albumImage:hover{
+	border:70px solid #000;
+	border-radius:50%;
+	width:100px;
+	height:100px;
+}
+
+.albumSongs{
+	position:relative;
+	width:360px;
+	min-height:240px;
+	/*border:1px solid #000;*/
+}
+
+.albumSongs li{
+	font-size:0.9em;
+	display:inline;
+}
+
+iframe{
+	margin:20px 70px 0;	
+}
+
+.content p{
+	margin:0 0 30px 0;	
+}
+
+audio{
+	 width:400px;
+	 margin-bottom:25px;	
+}
+
+.audioWrap{
+	width:400px;
+	height:auto;
+	margin:20px auto;
+	padding:10px;
+	background-color:rgba(255,102,204,0.25);
+	/*border:1px solid black;*/
+}
+
+.audioWrap a{
+	border:none;	
+}
+
+.audioWrap a:hover{
+	font-size:1em;	
+}
+
+.audioWrap img{
+	width:30px;
+	height:30px;
+	border:none;
+	float:right;
+}
+
+.audioWrap p{
+	margin:5px;	
+	line-height:2em;
+}
+
+.album{
+	font-style:italic;	
+}
+
+.social{
+	width:100px;
+	height:auto;
+	margin:10px 0 0 260px;
+	/*border:1px solid black;*/
+}
+
+.social a{
+	border:none;	
+}
+
+.social img{
+	border:none;
+	border-radius:50%;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.social img:hover{
+	background-color:rgba(255,102,204,0.3);
+	margin-left:-5px;
+}
+</style>
+</head>
+<body>
+<div class="mainContainer" id="mainMusic">
+    <div class="nav">
+        <a href="#thirtysecondstomars">Thirty Seconds to Mars</a>&nbsp;|
+        <a href="#biffyclyro">Biffy Clyro</a>&nbsp;|
+        <a href="#smashingpumpkins">Smashing Pumpkins</a>
+    </div>
+
+	<div class="headerBox" id="headerMusic">    
+         <h1><span class="smallerH1">All about</span> Music.</h1>
+	</div>
+       
+<div class="greyBox">
+    <div class="section" id="thirtysecondstomars">
+          <div class="navBox">
+              <h2>Thirty Seconds<br>to Mars</h2>
+          </div>
+              <img src="images/30stm.jpg" class="images" alt="visual of Thirty Seconds to Mars band">
+          
+    <div class="content" id="mars"> 
+    		
+	<div class="band">
+        <div class="bandWrapper">   
+            <div class="bandMembers" id="jaredleto">
+                <p>Jared<br>Leto</p>
+            </div>
+                <div class="inst">
+                    <p>lead vocals</p>
+                </div>
+                <div class="inst" id="inst2">
+                    <p>rhythm guitar</p>
+                </div>
+                <div class="inst" id="inst3">
+                    <p>song writer</p>
+                </div>
+        </div>
+            
+        <div class="bandWrapper">   
+            <div class="bandMembers" id="shannonleto">
+                <p>Shannon<br>Leto</p>
+            </div>
+            
+            <div class="inst">
+                <p>drums</p>
+            </div>
+            <div class="inst" id="inst2">
+                <p>percussion</p>
+            </div>
+        </div>
+        
+        <div class="bandWrapper">   
+            <div class="bandMembers" id="tomomilicevic">
+                <p>Tomo Miličević</p>
+            </div>
+            
+            <div class="inst">
+                <p>lead guitar</p>
+            </div>
+            <div class="inst" id="inst2">
+                <p>keyboards</p>
+            </div>
+		</div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/thirtysecondstomars?fref=ts" target="_blank"><img src="images/png/facebook.png"></a>
+            <a href="https://twitter.com/30SECONDSTOMARS" target="_blank"><img src="images/png/twitter.png"></a>
+            <a href="http://www.youtube.com/user/30SecondsToMarsVEVO" target="_blank"><img src="images/png/youtube.png"></a>
+        </div>
+ 	</div>
+       
+        <div class="albumWrapper">
+        	<div class="albumSongs">
+                <ul>
+                <li>Capricorn</li> &bull;
+                <li>Edge of the Earth</li> &bull;
+                <li>Fallen</li> &bull;
+                <li>Oblivion</li> &bull;
+                <li>Buddha for Mary</li> &bull;
+                <li>Echelon</li> &bull;
+                <li>Welcome to the Universe</li> &bull;
+                <li>The Mission</li> &bull;
+                <li>End of the Beginning</li> &bull;
+                <li>93 Million Miles</li> &bull;
+                <li>Year Zero</li>
+                </ul>
+            <img src="images/30secondstomars.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Attack</li> &bull;
+                <li>A Beautiful Lie</li> &bull;
+                <li>The Kill</li> &bull;
+                <li>Was It a Dream?</li> &bull;
+                <li>The Fantasy</li> &bull;
+                <li>Savior</li> &bull;
+                <li>From Yesterday</li> &bull;
+                <li>The Story</li> &bull;
+                <li>R-Evolve</li> &bull;
+                <li>A Modern Myth</li> &bull;
+                </ul>
+            <img src="images/abeautifullie.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Escape</li> &bull;
+                <li>Night of the Hunter</li> &bull;
+                <li>Kings and Queens</li> &bull;
+                <li>This is War</li> &bull;
+                <li>100 Suns</li> &bull;
+                <li>Hurricane</li> &bull;
+                <li>Closer to the Edge</li> &bull;
+                <li>Vox Populi</li> &bull;
+                <li>Search and Destroy</li> &bull;
+                <li>Alibi</li> &bull;
+                <li>Stranger in a Strange Land</li> &bull;
+                <li>L490</li>
+                </ul>
+            <img src="images/thisiswar.jpg" class="albumImage">        
+            </div>
+
+            <div class="albumSongs">
+                <ul>
+                <li>Birth</li> &bull;
+                <li>Conquistador</li> &bull;
+                <li>Up in the Air</li> &bull;
+                <li>City of Angels</li> &bull;
+                <li>The Race</li> &bull;
+                <li>End of All Days</li> &bull;
+                <li>Pyres of Varanasi</li> &bull;
+                <li>Bright Lights</li> &bull;
+                <li>Do or Die</li> &bull;
+                <li>Convergence</li> &bull;
+                <li>Northern Lights</li> &bull;
+                <li>Depuis Le Debut</li>
+                </ul>
+            <img src="images/llfd.jpg" class="albumImage">  
+            </div>      
+        </div>
+
+        <div class="audioWrap" id="audio30STM">        
+            <a href="audio/City of Angels.mp3" target="new"><img src="images/button_grey_play.png"><p>City of Angels - <span class="album">Love Lust Faith + Dreams</span></p></a>
+            <a href="audio/Closer to the Edge.mp3" target="new"><img src="images/button_grey_play.png"><p>Closer to the Edge - <span class="album">This is War</span></p></a>
+            <a href="audio/From Yesterday.mp3" target="new"><img src="images/button_grey_play.png"><p>From Yesterday - <span class="album">A Beautiful Lie</span></p></a>
+        </div>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/tSfUn7GSUlc" frameborder="0" allowfullscreen></iframe>
+        <p align="center">Kings and Queens - <span class="album">This is War</span></p>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/UDv4WrhrwqY" frameborder="0" allowfullscreen></iframe>
+        <p align="center">The Kill - <span class="album">A Beautiful Lie</span></p>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/wG5YWlQIuIA" frameborder="0" allowfullscreen></iframe>
+        <p align="center">Attack - <span class="album">A Beautiful Lie</span></p>
+        
+      </div>               
+    </div> 
+    
+    <div class="section" id="biffyclyro">
+          <div class="navBox">
+              <h2>Biffy Clyro</h2>
+          </div>
+              <img src="images/biffyclyro1.jpg" class="images" alt="visual of Biffy Clyro band">
+          
+    <div class="content" id="clyro"> 
+
+	<div class="band">        
+        <div class="bandWrapper">
+            <div class="bandMembers" id="simonneil">
+                <p>Simon<br>Neil</p>
+            </div>
+            
+            <div class="inst">
+                <p>lead vocals</p>
+            </div>
+            <div class="inst" id="inst2">
+                <p>guitar</p>
+            </div>
+        </div>
+ 
+        <div class="bandWrapper">
+            <div class="bandMembers" id="jamesjohnston">
+                <p>James Johnston</p>
+            </div>
+            
+            <div class="inst">
+                <p>bass guitar</p>
+            </div>
+            <div class="inst" id="inst2">
+                <p>vocals</p>
+            </div>
+        </div>
+        
+        <div class="bandWrapper">
+            <div class="bandMembers" id="benjohnston">
+                <p>Ben<br>Johnston</p>
+            </div>
+            
+            <div class="inst">
+                <p>drums</p>
+            </div>
+            <div class="inst" id="inst2">
+                <p>vocals</p>
+            </div>
+		</div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/biffyclyro?fref=ts" target="_blank"><img src="images/png/facebook.png"></a>
+            <a href="https://twitter.com/BiffyClyro" target="_blank"><img src="images/png/twitter.png"></a>
+            <a href="http://www.youtube.com/user/biffyclyro" target="_blank"><img src="images/png/youtube.png"></a>
+        </div>
+	</div>
+            
+        <div class="albumWrapper">
+        	<div class="albumSongs">
+                <ul>
+                <li>Joy.Discovery.Invention</li> &bull;
+                <li>27</li> &bull;
+                <li>Justboy</li> &bull;
+                <li>Kill the Old, Torture Their Young</li> &bull;
+                <li>The Go-Slow</li> &bull;
+                <li>Christopher's River</li> &bull;
+                <li>Convex, Concave</li> &bull;
+                <li>57</li> &bull;
+                <li>Hero Management</li> &bull;
+                <li>Solution Devices</li> &bull;
+                <li>Stress on the Sky</li> &bull;
+                <li>Scary Mary</li>
+                </ul>
+            <img src="images/blackenedsky.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Bodies in Flight</li> &bull;
+                <li>The Ideal Height</li> &bull;
+                <li>With Aplomb</li> &bull;
+                <li>A Day of...</li> &bull;
+                <li>Liberate the Illiterate / A Mong Among Mingers</li> &bull;
+                <li>Diary of Always</li> &bull;
+                <li>Questions and Answers</li> &bull;
+                <li>Eradicate the Doubt</li> &bull;
+                <li>When the Faction's Fractioned</li> &bull;
+                <li>Toys, Toys, Toys, Choke, Toys, Toys, Toys</li> &bull;
+                <li>All the Way Down: Prologue / Chapter 1</li> &bull;
+                <li>A Man of His Appalling Posture</li> &bull;
+                <li>Now the Action is on Fire!</li> &bull;
+                <li>Ewen's True Mental You</li>
+                </ul>
+            <img src="images/vertigoofbliss.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Glitter and Trauma</li> &bull;
+                <li>Strung to Your Ribcage</li> &bull;
+                <li>My Recovery Injection</li> &bull;
+                <li>Got Wrong</li> &bull;
+                <li>The Atrocity</li> &bull;
+                <li>Some King of Wizard</li> &bull;
+                <li>Wave Upon Wave Upon Wave</li> &bull;
+                <li>Only One Word Comes to Mind</li> &bull;
+                <li>There's No Such Thing as a Jaggy Shake</li> &bull;
+                <li>The Kids from Kibble and the Fist of Light</li> &bull;
+                <li>The Weaponsare Consealed</li> &bull;
+                <li>Pause It and Turn It Up</li> &bull;
+                <li>Tradition Feed</li>
+                </ul>
+            <img src="images/infinityland.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Living is a Problem Because Everything Dies</li> &bull;
+                <li>Saturday Superhouse</li> &bull;
+                <li>Who's Got a Match?</li> &bull;
+                <li>As Dust Dances</li> &bull;
+                <li>A Whole Child Ago</li> &bull;
+                <li>The Conversation is...</li> &bull;
+                <li>Now I'm Everyone</li> &bull;
+                <li>Semi-Mental</li> &bull;
+                <li>Love has a Diamater</li> &bull;
+                <li>Get Fucked Stud</li> &bull;
+                <li>Folding Stars</li> &bull;
+                <li>9/15ths</li> &bull;
+                <li>Machines</li>
+                </ul>
+            <img src="images/puzzle.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>The Captain</li> &bull;
+                <li>That Golden Rule</li> &bull;
+                <li>Bubbles</li> &bull;
+                <li>God &amp; Satan</li> &bull;
+                <li>Born on a Horse</li> &bull;
+                <li>Mountains</li> &bull;
+                <li>Shock Shock</li> &bull;
+                <li>Many of Horror</li> &bull;
+                <li>Booooom, Blast &amp; Ruin</li> &bull;
+                <li>Cloud of Stink</li> &bull;
+                <li>Know Your Quarry</li> &bull;
+                <li>Whorses</li>
+                </ul>
+            <img src="images/onlyrevolutions.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Different People</li> &bull;
+                <li>Black Chandelier</li> &bull;
+                <li>Sounds Like Balloons</li> &bull;
+                <li>Opposite</li> &bull;
+                <li>The Joke's on Us</li> &bull;
+                <li>Biblical</li> &bull;
+                <li>A Girl and His Cat</li> &bull;
+                <li>The Fog</li> &bull;
+                <li>LIttle Hospitals</li> &bull;
+                <li>The Thaw</li> &bull;
+                <li>Stingin' Belle</li> &bull;
+                <li>Modern Magic Formula</li> &bull;
+                <li>Spanish Radio</li> &bull;
+                <li>Victory Over the Sun</li> &bull;
+                <li>Pocket</li> &bull;
+                <li>Trumpet or Trap</li> &bull;
+                <li>Skylight</li> &bull;
+                <li>Accident Without Emergency</li> &bull;
+                <li>Woo Woo</li> &bull;
+                <li>Picture a Knife Fight</li>
+                </ul>
+            <img src="images/opposites.jpg" class="albumImage">
+            </div>
+        </div>
+
+        <div class="audioWrap" id="audioBC">        
+            <a href="audio/Opposite.mp3" target="new"><img src="images/button_grey_play.png"><p>Opposite - <span class="album">Opposites</span></p></a>
+            <a href="audio/Mountains.mp3" target="new"><img src="images/button_grey_play.png"><p>Mountains - <span class="album">Only Revolutions</span></p></a>
+            <a href="audio/Bubbles.mp3" target="new"><img src="images/button_grey_play.png"><p>Bubbles - <span class="album">Only Revolutions</span></p></a>
+        </div>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/f8yq8d8c4zE" frameborder="0" allowfullscreen></iframe> 
+        <p align="center">Biblical - <span class="album">Opposites</span></p>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/ix5GXPuwkSc" frameborder="0" allowfullscreen></iframe>
+        <p align="center">Black Chandelier - <span class="album">Opposites</span></p>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/dBCpem01_zk" frameborder="0" allowfullscreen></iframe>
+        <p align="center">Many of Horror - <span class="album">Only Revolutions</span></p>
+
+        </div>               
+    </div> 
+      
+    <div class="section" id="smashingpumpkins">    
+        <div class="navBox">
+            <h2>Smashing Pumpkins</h2>
+        </div>
+              <img src="images/sp_old1.jpg" class="images" alt="visual of Smashing Pumpkins band">
+          
+    <div class="content" id="pumpkins">    
+
+	<div class="band">        
+    	<div class="bandWrapper">
+            <div class="bandMembers" id="billycorgan">
+                <p>Billy<br>Corgan</p>
+            </div>
+            
+            <div class="inst">
+                <p>lead vocals</p>
+            </div>
+            <div class="inst" id="inst2">
+                <p>lead guitar</p>
+            </div>
+        </div>
+        
+        <div class="bandWrapper">
+            <div class="bandMembers" id="jamesiha">
+                <p>James<br>Iha</p>
+            </div>
+            
+            <div class="inst">
+                <p>rhythm guitar</p>
+            </div>
+		</div>
+
+          <div class="newBandMembers" id="jeffschroeder">
+            <p><span class="newMember">new member</span>
+            Jeff Schroeder</p>
+          </div>
+                  
+        <div class="bandWrapper">
+            <div class="bandMembers" id="darcywretzky">
+                <p>D'arcy Wretzky</p>
+            </div>
+            
+            <div class="inst">
+                <p>bass guitar</p>
+            </div>
+		</div>
+
+            <div class="newBandMembers" id="nicolefiorentino">
+                <p><span class="newMember">new member</span>
+                Nicole Fiorentino</p>
+            </div>
+                    
+        <div class="bandWrapper">
+            <div class="bandMembers" id="jimmychamberlin">
+                <p>Jimmy Chamberlin</p>
+            </div>
+            
+            <div class="inst">
+                <p>drums</p>
+            </div>
+        </div>
+              
+            <div class="newBandMembers" id="mikebyrne">
+            	<p><span class="newMember">new member</span>
+                Mike Byrne</p>
+            </div>
+            
+        <div class="social">
+            <a href="https://www.facebook.com/smashingpumpkins?fref=ts" target="_blank"><img src="images/png/facebook.png"></a>
+            <a href="https://twitter.com/SmashingPumpkin" target="_blank"><img src="images/png/twitter.png"></a>
+            <a href="http://www.youtube.com/user/SmashingPumpkinsVEVO" target="_blank"><img src="images/png/youtube.png"></a>
+        </div>
+	</div>
+    
+        <div class="albumWrapper">
+        	<div class="albumSongs">
+                <ul>
+                <li>I Am One</li> &bull;
+                <li>Siva</li> &bull;
+                <li>Rhinoceros</li> &bull;
+                <li>Bury Me</li> &bull;
+                <li>Crush</li> &bull;
+                <li>Suffer</li> &bull;
+                <li>Snail</li> &bull;
+                <li>Tristessa</li> &bull;
+                <li>Window Paine</li> &bull;
+                <li>Daydream</li>
+                </ul>            
+            <img src="images/gish.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Cherub Rock</li> &bull;
+                <li>Quiet</li> &bull;
+                <li>Today</li> &bull;
+                <li>Hummer</li> &bull;
+                <li>Rocket</li> &bull;
+                <li>Disarm</li> &bull;
+                <li>Soma</li> &bull;
+                <li>Geek U.S.A.</li> &bull;
+                <li>Mayonaise</li> &bull;
+                <li>Spaceboy</li> &bull;
+                <li>Silverfuck</li> &bull;
+                <li>Sweet Sweet</li> &bull;
+                <li>Luna</li>
+                </ul>            
+            <img src="images/siamesedream.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Mellon Collie and the Infinite Sadness</li> &bull;
+                <li>Tonight, Tonight</li> &bull;
+                <li>Jellybelly</li> &bull;
+                <li>Zero</li> &bull;
+                <li>Here is No Why</li> &bull;
+                <li>Bullet with Butterfly Wings</li> &bull;
+                <li>To Forgive</li> &bull;
+                <li>Fuck You (An Ode to No One)</li> &bull;
+                <li>Love</li> &bull;
+                <li>Cupid de Locke</li> &bull;
+                <li>Galapogos</li> &bull;
+                <li>Muzzle</li> &bull;
+                <li>Porcelina of the Vast Oceans</li> &bull;
+                <li>Take Me Down</li> &bull;
+                <li>Where Boys Fear to Tread</li> &bull;
+                <li>Bodies</li> &bull;
+                <li>Thirty-Three</li> &bull;
+                <li>In the Arms of Sleep</li> &bull;
+                <li>1979</li> &bull;
+                <li>Tales of a Scorched Earth</li> &bull;
+                <li>Thru the Eyes of Ruby</li> &bull;
+                <li>Stumbleine</li> &bull;
+                <li>X.Y.U.</li> &bull;
+                <li>We Only Come Out at Night</li> &bull;
+                <li>Beautiful</li> &bull;
+                <li>Lily (My One and Only)</li> &bull;
+                <li>By Starlight</li> &bull;
+                <li>Farewell and Goodnight</li>
+                </ul>            
+            <img src="images/melloncollie.jpg" class="albumImage">   
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>To Sheila</li> &bull;
+                <li>Ava Adore</li> &bull;
+                <li>Perfect</li> &bull;
+                <li>Daphne Descends</li> &bull;
+                <li>Once Upon a Time</li> &bull;
+                <li>Tear</li> &bull;
+                <li>Crestfallen</li> &bull;
+                <li>Appels + Oranjes</li> &bull;
+                <li>Pug</li> &bull;
+                <li>The Tale of the Dusty and Pistol Pete</li> &bull;
+                <li>Annie-dog</li> &bull;
+                <li>Shame</li> &bull;
+                <li>Behold! The Night Mare</li> &bull;
+                <li>For Martha</li> &bull;
+                <li>Blank Page</li> &bull;
+                <li>17</li>
+                </ul>            
+            <img src="images/adore.jpeg" class="albumImage">     
+            </div>
+            
+            <div class="albumSongs">  
+                <ul>
+                <li>The Everlasting Gaze</li> &bull;
+                <li>Raindrops + Sunshowers</li> &bull;
+                <li>Stand Inside Your Love</li> &bull;
+                <li>I of the Mourning</li> &bull;
+                <li>The Sacred and Profane</li> &bull;
+                <li>Try, Try, Try</li> &bull;
+                <li>Heavy Metal Machine</li> &bull;
+                <li>This Time</li> &bull;
+                <li>The Imploding Voice</li> &bull;
+                <li>Glass and the Ghost Children</li> &bull;
+                <li>Wound</li> &bull;
+                <li>The Crying Tree of Mercury</li> &bull;
+                <li>With Every Light</li> &bull;
+                <li>Blue Skies Bring Tears</li> &bull;
+                <li>Age of Innocence</li>
+                </ul>            
+            <img src="images/machina.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Glass</li> &bull;
+                <li>Cash Car Star</li> &bull;
+                <li>Dross</li> &bull;
+                <li>Real Love</li> &bull;
+                <li>Go</li> &bull;
+                <li>Let Me Give the World to You</li> &bull;
+                <li>Innosense</li> &bull;
+                <li>Home</li> &bull;
+                <li>Blue SKies Bring Tears</li> &bull;
+                <li>White Spyder</li> &bull;
+                <li>In My Body</li> &bull;
+                <li>Le Deux Machina</li> &bull;
+                <li>Atom Bomb</li>
+                </ul>            
+            <img src="images/machinaii.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Doomsday</li> &bull;
+                <li>7 Shades of Black</li> &bull;
+                <li>Bleeding the Orchid</li> &bull;
+                <li>That's the Way (My Love Is)</li> &bull;
+                <li>Tarantula</li> &bull;
+                <li>Starz</li> &bull;
+                <li>United States</li> &bull;
+                <li>Neverlost</li> &bull;
+                <li>Bright the Light</li> &bull;
+                <li>(Come On) Let's Go!</li> &bull;
+                <li>Pomp and Circumstances</li>
+                </ul>            
+            <img src="images/zeitgeist.jpg" class="albumImage">
+            </div>
+            
+            <div class="albumSongs">
+                <ul>
+                <li>Quasar</li> &bull;
+                <li>Panopticon</li> &bull;
+                <li>The Celestials</li> &bull;
+                <li>Violet Rays</li> &bull;
+                <li>My Love is Winter</li> &bull;
+                <li>One Diamond, One Heart</li> &bull;
+                <li>Pinwheels</li> &bull;
+                <li>Oceania</li> &bull;
+                <li>Pale Horse</li> &bull;
+                <li>The Chimera</li> &bull;
+                <li>Glissandra</li> &bull;
+                <li>Inkless</li> &bull;
+                <li>Wildflower</li>
+                </ul>            
+            <img src="images/oceania.jpg" class="albumImage">
+            </div>
+        </div>
+
+        <div class="audioWrap" id="audioSP">        
+            <a href="audio/X.Y.U..mp3" target="new"><img src="images/button_grey_play.png"><p>X.Y.U. - <span class="album">Mellon Collie and The Infinite Sadness - Twilight to Starlight</span></p></a>
+            <a href="audio/Cherub Rock.mp3" target="new"><img src="images/button_grey_play.png"><p>Cherub Rock - <span class="album">Siamese Dream</span></p></a>
+            <a href="audio/Pale Horse.mp3" target="new"><img src="images/button_grey_play.png"><p>Pale Horse - <span class="album">Oceania</span></p></a>
+        </div>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/GQs2nRnZBPE" frameborder="0" allowfullscreen></iframe>
+        <p align="center">Zero - <span class="album">Mellon Collie and The Infinite Sadness - Dawn to Dusk</span></p>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/CpMLIINPXyw" frameborder="0" allowfullscreen></iframe>
+        <p align="center">Mayonaise - <span class="album">Siamese Dream</span></p>
+        
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/HrxkiQTJQo8" frameborder="0" allowfullscreen></iframe>
+        <p align="center">Siva - <span class="album">Gish</span></p>
+
+        </div>                       
+    </div>
+
+	</div>           
+</div> 
+
+<div class="navContainer">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="fitness.html">Fitness</a></li>
+      <li><a href="codes.html">Codes</a></li>
+      <li><a href="about.php#contact">Contact</a></li>
+      <li><a href="http://ivyswan.wordpress.com/">Blog</a></li>
+      </ul>
+    <div class="menu">
+        <p>Menu</p>
+    </div>
+</div>
+
+<div class="back">
+    <a href="#">Back to top</a>
+</div>
+
+<div class="bottomNav">
+    <a href="index.html">Home</a>&nbsp;|
+    <a href="about.php">About</a>&nbsp;|
+    <a href="music.html">Music</a>&nbsp;|
+    <a href="fitness.html">Fitness</a>&nbsp;|
+    <a href="codes.html">Codes</a>&nbsp;|
+    <a href="about.php#contact">Contact</a>&nbsp;|
+    <a href="http://ivyswan.wordpress.com/">Blog</a>
+    <span class="footer"><p>IVY SWAN 2013</p></span>
+</div> 
+</body>
+</html>

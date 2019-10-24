@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.homepage{
+		background-attachment:scroll;
+	}
+	.back{
+		display:none;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	.homepage{
+		background-attachment:scroll;
+	}
+		.back{
+		display:none;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	.homepage{
+		background-attachment:scroll;
+	}
+		.back{
+		display:none;
+	}
+}
