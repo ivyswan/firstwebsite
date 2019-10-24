@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IVY SWAN</title>
+<meta name="description" content="Web Developer at Reynolds Digital - a WordPress Web design agency in London specialising in WordPress website development.">
+<link rel="stylesheet" type="text/css" href="desktop.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="pc.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:321px) and (max-width:768px)" href="tablet.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:320px)" href="phone.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width:320px) and (max-device-width:480px)" href="phone.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite|Prata|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'> 
+</head>
+<body>
+<div class="homepage" id="intro">
+	<div class="headerBox" id="headerHome">    
+         <h1><span class="smallerH1">Hello! I'm</span> Ivy Swan.</h1>
+         <span id="clickImage"><p>Click the image to know more about me!</p></span>
+	</div>
+    <div id="pic">
+        <a href="about.php"><img src="images/myPic.jpg" id="myPic" alt="visual of the website owner's photo"></a>
+        <p>Nice to meet you!</p>
+    </div>
+</div>
+<div class="homepage" id="music">
+    <h1 class="box"><a href="music.html">Music</a></h1>
+</div>
+<div class="homepage" id="fitness">
+    <h1 class="box"><a href="fitness.html">Fitness</a></h1>
+</div>
+<div class="homepage" id="codes">
+    <h1 class="box"><a href="codes.html">Codes</a></h1>
+</div>
+ <div class="navContainer">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="fitness.html">Fitness</a></li>
+        <li><a href="codes.html">Codes</a></li>
+        <li><a href="about.php#contact">Contact</a></li>
+        <li><a href="http://ivyswan.wordpress.com/">Blog</a></li>
+        </ul>
+    <div class="menu">
+        <p>Menu</p>
+    </div>
+</div>
+
+<div class="homepage" id="info">
+    <div class="bottomNav" id="homeNav">
+        <a href="index.html">Home</a>&nbsp;|
+        <a href="about.php">About</a>&nbsp;|
+        <a href="music.html">Music</a>&nbsp;|
+        <a href="fitness.html">Fitness</a>&nbsp;|
+        <a href="codes.html">Codes</a>&nbsp;|
+	    <a href="about.php#contact">Contact</a>&nbsp;|
+        <a href="http://ivyswan.wordpress.com/">Blog</a>
+        <span class="footer"><p>IVY SWAN 2013</p></span>
+    </div>
+</div>
+</body>
+</html>
